@@ -1,0 +1,70 @@
+					CREATE YOUR FIRST PROJECT IN DJANGO  ~~ Ishan Shah
+
+In cmd terminal of PC: python -m django startproject proj1
+
+Open proj1 folder in VS CODE
+
+VS CODE Terminal:  
+
+1) python manage.py runserver :- TO RUN SERVER
+
+2) python manage.py startapp baseapp
+
+3) In settings.py --> INSTALLED_APPS=[ add 'baseapp'
+
+4) In baseapp folder -> views.py -> ADD This code:
+
+		from django.shortcuts import render
+		from django.http import HttpResponse
+
+		# Create your views here.
+
+		def home(request):
+     		    return HttpResponse("Hello, world. You're at the polls index.")
+
+5) In urls.py--> Add some lines
+		from baseapp import views
+		urlpatterns = [
+    			path('admin/', admin.site.urls),
+    			path('',views.home)
+		]
+
+6) To add about page like /about
+
+
+add function in views.py :--
+
+def about(request):
+     return HttpResponse("Hello, This is about page")
+
+
+in urls.py:--
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.home),
+    path('about/',views.about)  --add this line
+]
+
+
+
+
+
+7) Create new folder in baseapp directory: name: templates :-- files: about.html,home.html
+
+
+8) In views.py in each function except of return HttpResponse change it to render & do code like this:
+
+		from django.shortcuts import render
+		from django.http import HttpResponse
+
+		# Create your views here.
+
+
+		def home(request):
+     		  return render(request,'home.html')
+
+
+		def about(request):
+     		  return render(request,'about.html')
+RUN THE CODE

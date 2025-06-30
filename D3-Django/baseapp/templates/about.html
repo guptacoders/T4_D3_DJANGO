@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Us - Sunny Days Kindergarten</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fff8e1;
+    color: #4a4a4a;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #ffcc80;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-size: 2.8rem;
+    color: #ef6c00;
+    text-shadow: 1px 1px 2px #ffa726;
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #6d4c41;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+
+  nav {
+    background: #ffb74d;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  nav a {
+    color: #4e342e;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    color: #ef6c00;
+    border-bottom: 2px solid #ef6c00;
+    padding-bottom: 2px;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .page-title {
+    text-align: center;
+    color: #ef6c00;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #6d4c41;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+  }
+
+  .content-section {
+    background: #fff3e0;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 10px rgba(239,108,0,0.2);
+    margin-bottom: 40px;
+  }
+
+  .content-section h2 {
+    color: #ef6c00;
+    margin-bottom: 20px;
+  }
+  .content-section p {
+    font-size: 1.1rem;
+    color: #6d4c41;
+    margin-bottom: 15px;
+  }
+  .content-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #6d4c41;
+    font-size: 1.1rem;
+  }
+  .content-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .team {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-member {
+    background: #fff3e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(239,108,0,0.2);
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .team-member:hover {
+    transform: scale(1.05);
+  }
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ef6c00;
+  }
+  .team-member h3 {
+    color: #ef6c00;
+    margin-bottom: 5px;
+  }
+  .team-member p {
+    font-size: 1rem;
+    color: #6d4c41;
+  }
+
+  footer {
+    background: #ffcc80;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+    color: #4e342e;
+    font-weight: 600;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    nav a {
+      margin: 10px 0;
+    }
+    .team {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sunny Days Kindergarten</h1>
+  <p>Where Learning Meets Fun!</p>
+</header>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="about.html" class="active">About Us</a>
+  <a href="programs.html">Programs</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h2 class="page-title">About Us</h2>
+  <p class="subtitle">Learn more about our philosophy, mission, and the dedicated team behind Sunny Days Kindergarten.</p>
+
+  <section class="content-section">
+    <h2>Our Philosophy</h2>
+    <p>At Sunny Days Kindergarten, we believe that early childhood is a critical time for development. Our approach combines structured learning with free play, fostering creativity, curiosity, and social skills in a safe and nurturing environment.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide a joyful, inclusive, and stimulating atmosphere where children can grow emotionally, socially, and intellectually.</p>
+    <ul>
+      <li>Encourage positive self-expression and confidence.</li>
+      <li>Support cognitive development with age-appropriate activities.</li>
+      <li>Promote kindness, respect, and collaboration.</li>
+      <li>Ensure safety and comfort for every child.</li>
+    </ul>
+  </section>
+
+  <section class="content-section">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ms. Emily Johnson" />
+        <h3>Ms. Emily Johnson</h3>
+        <p>Lead Teacher</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Mr. Daniel Smith" />
+        <h3>Mr. Daniel Smith</h3>
+        <p>Assistant Teacher</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Ms. Rachel Lee" />
+        <h3>Ms. Rachel Lee</h3>
+        <p>Creative Arts Instructor</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Sunny Days Kindergarten | 123 Sunshine Ave, Happy Town | Phone: (123) 456-7890
+</footer>
+
+</body>
+</html>
