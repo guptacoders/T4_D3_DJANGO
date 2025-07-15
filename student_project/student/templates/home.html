@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Student Information</title>
+    </head>
+
+    <body>
+        <h2>Add Student Information</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Submit</button>
+        </form>
+
+        <div>
+            {%for i in data_std%}
+            <h2>{{i.name}}</h2>
+            <h2>{{i.enroll_no}}</h2>
+            <h2>{{i.branch}}</h2>
+            {%endfor%}
+        </div>    
+    </body>
+</html>
